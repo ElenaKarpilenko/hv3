@@ -25,9 +25,7 @@ public class Main {
         array[14] = 99.0;
         array[15] =77
 
-        // Переменные для подсчета суммы и количества положительных чисел
-        double sum = 0;
-        int count = 0;
+       
         
         // Флаг для определения первого отрицательного числа
         boolean foundFirstNegative = false;
