@@ -22,6 +22,55 @@ public class Main {
         array[12] = 75.0;
         array[13] = -82.0;
         array[14] = 91.0;
+        public class Main {
+    public static void main(String[] args) {
+        // Создаем массив из 15 элементов
+        double[] array = new double[15];
+        
+        // Заполняем массив положительными и отрицательными числами
+        array[0] = 87.0;
+        array[1] = 27.0;
+        array[2] = -47.0;
+        array[3] = 28.0;
+        array[4] = 39.0;
+        array[5] = 69.0;
+        array[6] = -75.0;
+        array[7] = 16.0;
+        array[8] = -34.0;
+        array[9] = 45.0;
+        array[10] = 57.0;
+        array[11] = -68.0;
+        array[12] = 78.0;
+        array[13] = -88.0;
+        array[14] = 99.0;
+        array[15] =77
+
+        // Переменные для подсчета суммы и количества положительных чисел
+        double sum = 0;
+        int count = 0;
+        
+        // Флаг для определения первого отрицательного числа
+        boolean foundFirstNegative = false;
+
+        // Цикл for-each для обработки массива
+        for (double num : array) {
+            if (foundFirstNegative && num > 0) {
+                sum += num;
+                count++;
+            }
+            if (num < 0) {
+                foundFirstNegative = true;
+            }
+        }
+
+        // Вычисление среднего арифметического
+        double average = (count > 0) ? sum / count : 0;
+        
+        // Вывод результата на экран
+        System.out.println("Среднее арифметическое положительных чисел после первого отрицательного: " + average);
+    }
+}
+
 
         // Переменные для подсчета суммы и количества положительных чисел
         double sum = 0;
